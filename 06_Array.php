@@ -13,7 +13,7 @@ echo $carros[4];
 */
 
 $carroUm = [
-     'Uno',
+    'modelo' => 'Uno',
      'Fiat',
      'Branco'];
 
