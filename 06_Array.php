@@ -14,9 +14,12 @@ echo $carros[4];
 
 $carroUm = [
     'modelo' => 'Uno',
-     'Fiat',
-     'Branco'];
+    'marca' => 'Fiat',
+    'cor' => 'Branco'];
 
-
-echo $carroUm[2];
+echo $carroUm['cor'];
+echo '<br>';
+echo $carroUm['modelo'];
+echo '<br>';
+echo $carroUm['marca'];
 ?>
