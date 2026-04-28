@@ -16,7 +16,7 @@ asort($carrinho);
 var_dump($carrinho);
 
 echo'<hr>';
-//
+//reseta os indeses e ordena em elfabetica
 sort($carrinho);
 var_dump($carrinho);
 ?>
