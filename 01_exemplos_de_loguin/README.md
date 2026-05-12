@@ -1,0 +1,1 @@
+// o formulario de loguin e a estruturação da tela, ondesera os campos de inseção de informações que é lencado ao sistema de validação, onde pegara os dados dos campos do formulario e fara a comparação dos dados, caso compativel levara para a tela de adm, caso cantrario aparecera a palavra erro
