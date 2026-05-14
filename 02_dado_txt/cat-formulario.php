@@ -7,12 +7,12 @@
 </head>
 <body>
     <h1>Cadastro de Gatos</h1>
-    <form action="cadastrar.php" method="post">
+    <form action="cat-cadastro.php" method="post">
         <label for="nome">Nome: </label>
         <input type="text" name="nome" id="nome"><br><br>
 
          <label for="raca">Raça: </label>
-         <input type="" name="raca" id="raca"><br><br>
+         <input type="text" name="raca" id="raca"><br><br>
 
            <label for="idade">Idade: </label>
            <input type="number" name="idade" id="idade"><br><br>

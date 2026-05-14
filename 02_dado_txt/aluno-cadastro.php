@@ -1,0 +1,13 @@
+<?php
+$ra = $_POST['RA'];
+$nome = $_POST['nome'];
+$idade = $_POST['idade'];
+
+    echo "RA: " . $ra . "<br>";
+    echo "Nome: " . $nome . "<br>";
+    echo "Idade: " . $idade . "<br>";
+
+$arquivo = fopen('aluno-DB.txt', 'a');
+fwrite($arquivo, "$ra \t $nome \t $idade\n");
+fclose($arquivo);
+?>
