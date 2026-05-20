@@ -20,5 +20,14 @@
         <input type="submit" value="Cadastrar">
         <input type="reset" value="Limpar">
     </form>
+    <h2>Listagem de Alunos</h2>
+    <?php
+     $arquivo = fopen("aluno-db.txt", 'r');
+    while(!feof($arquivo)){
+        $linha = fgets($arquivo);
+        echo "$linha <br>";
+    }
+    fclose($arquivo);
+    ?>
 </body>
 </html>

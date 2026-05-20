@@ -5,9 +5,10 @@
     $estado = $_POST['estado'];
     $fumante = isset($_POST['fumante']) ? $_POST['fumante'] : null;
 
-$arquivo = fopen('gatos-DB.txt', 'a');
-fwrite($arquivo, "$nome \t $fone \t $cidade \t $estado \t $fumante\n");
+$arquivo = fopen('pacientes-db.txt', 'a');
+fwrite($arquivo, "$nome - $fone - $cidade - $estado - $fumante\n");
 fclose($arquivo);
+header("Location: pacientes-forme.php");
 
     echo "Nome: " . $nome . "<br>";
     echo "Telefone: " . $fone . "<br>";

@@ -7,7 +7,8 @@ $data = $_POST['data'];
     echo "Descrição: " . $descricao . "<br>";
     echo "Data: " . $data . "<br>";
 
-$arquivo = fopen('eventos-DB.txt', 'a');
-fwrite($arquivo, "$nome \t $descricao \t $data\n");
+$arquivo = fopen('eventos-db.txt', 'a');
+fwrite($arquivo, "$nome - $descricao - $data\n");
 fclose($arquivo);
+header("Location: eventos-forme.php");
 ?>

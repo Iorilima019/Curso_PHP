@@ -7,7 +7,8 @@ $idade = $_POST['idade'];
     echo "Nome: " . $nome . "<br>";
     echo "Idade: " . $idade . "<br>";
 
-$arquivo = fopen('aluno-DB.txt', 'a');
-fwrite($arquivo, "$ra \t $nome \t $idade\n");
+$arquivo = fopen('aluno-db.txt', 'a');
+fwrite($arquivo, "$ra - $nome - $idade\n");
 fclose($arquivo);
+header("Location: aluno-forme.php");
 ?>

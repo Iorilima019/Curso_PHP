@@ -7,7 +7,9 @@ $ano = $_POST['ano'];
     echo "Título: " . $titulo . "<br>";
     echo "Ano: " . $ano . "<br>";
 
-$arquivo = fopen('album-DB.txt', 'a');
-fwrite($arquivo, "$artista \t $titulo \t $ano\n");
+$arquivo = fopen('album-db.txt', 'a');
+fwrite($arquivo, "$artista - $titulo - $ano\n");
 fclose($arquivo);
+
+header("Location: album-formulario.php");
 ?>

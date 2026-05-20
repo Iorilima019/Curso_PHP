@@ -5,10 +5,12 @@
     $estado = $_POST['estado'];
     $casado = $_POST['casado'];
     $necessitaAdap = $_POST['necessitaAdap'];
+    $descricao = $_POST['descricao'];
 
-$arquivo = fopen('funcionarios-DB.txt', 'a');
-fwrite($arquivo, "$nome \t $fone \t $numeDepen \t $estado \t $casado \t $necessitaAdap \t $descricao\n");
+$arquivo = fopen('funcionarios-db.txt', 'a');
+fwrite($arquivo, "$nome - $fone - $numeDepen - $estado - $casado - $necessitaAdap - $descricao\n");
 fclose($arquivo);
+header("Location: funcionarios-forme.php");
 
     echo "Nome: " . $nome . "<br>";
     echo "Telefone: " . $fone . "<br>";

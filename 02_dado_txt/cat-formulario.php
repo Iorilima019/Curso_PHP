@@ -31,5 +31,14 @@
         <button type="submit">Salvar</button>
         <button type="reset">Limpar</button>
     </form>
+    <h2>Listagem dos Gatos</h2>
+    <?php
+     $arquivo = fopen("gatos-db.txt", 'r');
+    while(!feof($arquivo)){
+        $linha = fgets($arquivo);
+        echo "$linha <br>";
+    }
+    fclose($arquivo);
+    ?>
 </body>
 </html>

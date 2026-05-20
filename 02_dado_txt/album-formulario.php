@@ -20,5 +20,25 @@
         <button type="submit">Salvar</button>
         <button type="reset">Limpar</button>
     </form>
+    <hr>
+    <h2>Listagem de Álbuns</h2>
+    <?php
+    $arquivo = fopen("album-db.txt", 'r');
+    while(!feof($arquivo)){
+        $linha = fgets($arquivo);
+        echo "$linha <br>";
+    }
+    fclose($arquivo);
+
+
+    /*
+    $arquivo = "album-db.txt";
+    $arquivo_aberto = fopen($arquivo, 'r');
+    $conteudo = fread($arquivo_aberto, filesize($arquivo));
+    echo $conteudo;
+    fclose($arquivo_aberto);
+    */
+    ?>
+
 </body>
 </html>

@@ -14,9 +14,9 @@ $cast = $_POST['cast'];
     echo "Castrado: " . $cast . "<br>";
 
 
-$arquivo = fopen('gatos-DB.txt', 'a');
-fwrite($arquivo, "$nome \t $raca \t $idade \t $pelagem \t $gen \t $cast\n");
+$arquivo = fopen('gatos-db.txt', 'a');
+fwrite($arquivo, "$nome - $raca - $idade - $pelagem - $gen - $cast\n");
 fclose($arquivo);
 
-
+header("Location: cat-formulario.php");
 ?>
